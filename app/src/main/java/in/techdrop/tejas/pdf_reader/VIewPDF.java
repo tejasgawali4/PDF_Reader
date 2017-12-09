@@ -4,10 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
-import es.voghdev.pdfviewpager.library.PDFViewPager;
-import es.voghdev.pdfviewpager.library.adapter.BasePDFPagerAdapter;
+import com.github.barteksc.pdfviewer.PDFView;
 
 
 /**
@@ -16,25 +14,24 @@ import es.voghdev.pdfviewpager.library.adapter.BasePDFPagerAdapter;
 
 public class VIewPDF extends AppCompatActivity {
 
-    PDFViewPager pdfViewPager;
+    PDFView pdfView;
+    String filename,name;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState)
-    {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewpdf);
-        setTitle("This is file");
-        pdfViewPager = (PDFViewPager) findViewById(R.id.pdfViewPager);
+
 
         Intent intent = getIntent();
-        String url = intent.getStringExtra("url");
+        filename = intent.getStringExtra("url");
+        name = intent.getStringExtra("name");
 
-        Toast.makeText(getApplicationContext(),"Reading " + url ,Toast.LENGTH_SHORT).show();
-    }
+        setTitle("Your Reading " + name);
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        ((BasePDFPagerAdapter) pdfViewPager.getAdapter()).close();
+        pdfView = (PDFView) findViewById(R.id.pdfView);
+
+        pdfView.fromAsset(filename).load();
+
     }
 }

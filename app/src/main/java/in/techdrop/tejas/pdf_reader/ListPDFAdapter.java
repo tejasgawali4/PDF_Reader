@@ -98,6 +98,7 @@ public class ListPDFAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(activity.getApplicationContext(), VIewPDF.class);
                 intent.putExtra("url",data.get(position).get("url"));
+                intent.putExtra("name",data.get(position).get("name"));
                 activity.startActivity(intent);
             }
         });

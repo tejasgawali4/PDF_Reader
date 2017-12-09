@@ -1,4 +1,6 @@
-{"result":[{"id":"1","name":"Applied Maths","url":"android.resource://com.project.datastructure/assets/appliedmaths.pdf"},
-  {"id":"1","name":"Contracts and Accounts","url":"android.resource://com.project.datastructure/assets/contractsandaccounts.pdf"},
-  {"id":"2","name":"Irrigation Engineering","url":"android.resource://com.project.datastructure/assets/irrigationengineering.pdf"},
-  {"id":"3","name":"Transportation Engineering","url":"android.resource://com.project.datastructure/assets/transportationengineering.pdf"}]}
+{"result":
+  [{"id":"1","name":"Applied Maths","url":"appliedmaths.pdf"},
+  {"id":"2","name":"Contracts and Accounts","url":"contractsandaccounts.pdf"},
+  {"id":"3","name":"Irrigation Engineering","url":"irrigationengineering.pdf"},
+  {"id":"4","name":"Transportation Engineering","url":"transportationengineering.pdf"}]
+}
