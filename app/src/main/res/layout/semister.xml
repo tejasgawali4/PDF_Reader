@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnSem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semister 1" />
+
+    <Button
+        android:id="@+id/btnSem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semister 2" />
+
+    <Button
+        android:id="@+id/btnSem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semister 3" />
+
+    <Button
+        android:id="@+id/btnSem4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semister 4 " />
+
+    <Button
+        android:id="@+id/btnSem5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semister 5" />
+
+    <Button
+        android:id="@+id/btnSem6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semister 6" />
+</LinearLayout>

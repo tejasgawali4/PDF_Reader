@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/PDF_Reader.iml" filepath="$PROJECT_DIR$/PDF_Reader.iml" />
       <module fileurl="file://$PROJECT_DIR$/PDF_Reader2.iml" filepath="$PROJECT_DIR$/PDF_Reader2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
